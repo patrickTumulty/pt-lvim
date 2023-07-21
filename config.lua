@@ -6,16 +6,14 @@
 require("pt_nvim")
 
 lvim.plugins = {
-    -- { 'navarasu/onedark.nvim' },
-    { "ellisonleao/gruvbox.nvim", priority = 1000 }
+    {
+        "catppuccin/nvim",
+        name = "catppuccin",
+        priority = 1000
+    },
+    -- { "cdelledonne/vim-cmake" }
+    { 'Civitasv/cmake-tools.nvim' }
 }
 
--- require("onedark").setup({
---     style = "darker"
--- })
-
--- lvim.colorscheme = "onedark"
-
-lvim.colorscheme = "gruvbox"
-
-
+-- lvim.colorscheme = "catppuccin-frappe"
+lvim.colorscheme = "catppuccin-macchiato"
