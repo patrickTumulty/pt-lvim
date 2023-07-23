@@ -1,4 +1,3 @@
-
 lvim.keys.insert_mode["<S-TAB>"] = "<C-d>"
 
 lvim.keys.visual_mode["J"] = ":m '>+1<CR>gv=gv"
@@ -9,5 +8,7 @@ lvim.keys.normal_mode["<C-u>"] = "<C-u>zz"
 lvim.keys.normal_mode["n"] = "nzzzv"
 lvim.keys.normal_mode["N"] = "Nzzzv"
 
-lvim.keys.normal_mode["P"] = [["_dP]]
-lvim.keys.visual_mode["P"] = [["_dP]]
+lvim.keys.normal_mode["P"] = { [["_dP]], "Paste. No Override" }
+lvim.keys.visual_mode["P"] = { [["_dP]], "Paste. No Override" }
+
+lvim.lsp.buffer_mappings.normal_mode["gr"] = { "<cmd>Telescope lsp_references<cr>", "Go to Definiton" }

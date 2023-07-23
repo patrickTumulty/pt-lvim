@@ -17,3 +17,5 @@ lvim.plugins = {
 
 -- lvim.colorscheme = "catppuccin-frappe"
 lvim.colorscheme = "catppuccin-macchiato"
+
+
